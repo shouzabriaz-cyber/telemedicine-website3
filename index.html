@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telemedicine Consultation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fadeIn { animation: fadeIn 1s ease-in-out; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 animate-fadeIn">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-blue-600">Telemedicine</h1>
+            <div class="space-x-4 hidden md:block">
+                <a href="#home" class="hover:text-blue-600">Home</a>
+                <a href="#services" class="hover:text-blue-600">Services</a>
+                <a href="#book" class="hover:text-blue-600">Book</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-600 text-white py-6 shadow-md">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl font-bold">Online Telemedicine Consultations</h1>
+            <p class="mt-2 text-lg">Talk to a qualified doctor from the comfort of your home</p>
+        </div>
+    </header>
+
+    <!-- Highlighted Middle Section -->
+    <section class="bg-yellow-200 py-24 flex items-center justify-center">
+        <div class="text-center max-w-3xl px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">You can ask anything, anytime. We will provide you the best services.</h2>
+            <p class="text-lg md:text-xl text-gray-700">Free Normal Delivery • Free Vaccinations for Children • Free OPD Service with Medicine (If you cannot afford)</p>
+        </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="container mx-auto px-4 py-10">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-2xl font-semibold mb-4">Get Medical Advice Anytime</h2>
+                <p class="mb-4">We provide fast and reliable online medical consultations for general health issues, follow-ups, and ongoing care.</p>
+                <ul class="list-disc ml-5 mb-4">
+                    <li>Video & audio consultations</li>
+                    <li>Prescriptions & reports</li>
+                    <li>24/7 chat support</li>
+                    <li>Emergency guidance</li>
+                </ul>
+                <a href="#book" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg shadow hover:bg-blue-700">Book Consultation</a>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/500x350" alt="Doctor Online" class="rounded-xl shadow-lg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-semibold text-center mb-8">Our Doctors</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1">
+                <h3 class="text-xl font-bold text-blue-600 mb-2">Dr Muhammad Shouzab Riaz</h3>
+                <p class="text-gray-700 mb-1">MBBS</p>
+                <p class="text-gray-700">Family Medicine Specialist</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1">
+                <h3 class="text-xl font-bold text-blue-600 mb-2">Dr Aiza Saeed Qureshi</h3>
+                <p class="text-gray-700 mb-1">MBBS</p>
+                <p class="text-gray-700">FCPS General Surgeon</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-center mb-8">Consultation Prices</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+                    <h3 class="text-xl font-bold text-green-600 mb-3">General Consultation</h3>
+                    <p class="text-gray-700 text-lg">Rs 500 only</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+                    <h3 class="text-xl font-bold text-green-600 mb-3">General Surgeon Consultation</h3>
+                    <p class="text-gray-700 text-lg">Rs 1000 only</p>
+                    <p class="text-gray-600 mt-2">Includes 1 repeat check-up FREE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book" class="bg-white py-10 shadow-inner">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-center mb-6">Book Your Consultation</h2>
+            <form class="max-w-lg mx-auto bg-gray-100 p-6 rounded-xl shadow">
+                <label class="block mb-3">
+                    <span class="text-gray-700">Full Name</span>
+                    <input type="text" class="w-full p-3 rounded border border-gray-300" placeholder="Your Name" />
+                </label>
+                <label class="block mb-3">
+                    <span class="text-gray-700">Phone / WhatsApp Number</span>
+                    <input type="text" class="w-full p-3 rounded border border-gray-300" placeholder="03xx-xxxxxxx" />
+                </label>
+                <label class="block mb-3">
+                    <span class="text-gray-700">Health Concern</span>
+                    <textarea class="w-full p-3 rounded border border-gray-300" rows="4" placeholder="Describe your symptoms"></textarea>
+                </label>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center mt-10">
+        <p>© 2025 Telemedicine Service | All Rights Reserved</p>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/923390002699" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600 flex items-center gap-2">
+        <span>Chat on WhatsApp</span>
+    </a>
+
+</body>
+</html>
